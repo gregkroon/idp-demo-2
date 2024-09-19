@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: new-sample-service
+  description: My New service.
+  tags: [my-sample]
+  links:
+    - title: Website
+      url: http://my-sample-website.com
+  annotations:
+    github.com/project-slug: my-sample-org/my-sample-repo
+    backstage.io/techdocs-ref: dir:../../
+    example.com/sla: "99.9%"
+    example.com/patch-level: "2024-08"
+    example.com/os-version: "Ubuntu 22.04 LTS"
+spec:
+  type: Service
+  owner: my-new-team
+  lifecycle: experimental
+  system: my-new-system
